@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_essentials">
+
+    <fragment
+        android:id="@+id/navigation_essentials"
+        android:name="com.krnventures.covid_19.ui.essentials.EssentialsFragment"
+        android:label="@string/title_essentials"
+        tools:layout="@layout/fragment_essentials" />
+
+    <fragment
+        android:id="@+id/navigation_infected_locations"
+        android:name="com.krnventures.covid_19.ui.infectedLocations.InfectedLocationsFragment"
+        android:label="@string/title_infected_locations"
+        tools:layout="@layout/fragment_infected_locations" />
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.krnventures.covid_19.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" />
+</navigation>

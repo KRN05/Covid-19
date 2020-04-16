@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_essentials"
+        android:icon="@drawable/ic_essentials"
+        android:title="@string/title_essentials" />
+
+    <item
+        android:id="@+id/navigation_infected_locations"
+        android:icon="@drawable/ic_infected_locations"
+        android:title="@string/title_infected_locations" />
+
+    <item
+        android:id="@+id/navigation_news"
+        android:icon="@drawable/ic_news"
+        android:title="@string/title_news" />
+
+</menu>
