@@ -1,0 +1,6 @@
+--required context, found fragment
+    1.'this' need to be replaced with 'activity.applicationContext' or with requireActivity().applicationContext
+    2. replace 'this' with 'this.activity'
+
+
+--

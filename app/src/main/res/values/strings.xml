@@ -3,4 +3,24 @@
     <string name="title_essentials">Essentials</string>
     <string name="title_infected_locations">Infected Locations</string>
     <string name="title_news">News</string>
+
+    <string name="spinner_name">News</string>
+
+
+    <string-array name="spinner_states">
+        <item>All States</item>
+        <item>Andaman and Nicobar</item>
+        <item>Andra Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+    </string-array>
+
+    <string-array name="spinner_category">
+        <item>Andaman and Nicobar</item>
+        <item>Andra Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+    </string-array>
 </resources>
