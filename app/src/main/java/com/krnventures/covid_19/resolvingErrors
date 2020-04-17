@@ -3,4 +3,17 @@
     2. replace 'this' with 'this.activity'
 
 
---
+--id must not be null
+    1. check whether you have attached to correct layout
+
+
+--sometimes in fragment you may get an error 'this_this_id must not be null'
+    1. So, just return a view in onCreateView
+    2. Use onViewCreated function to access any this_this_id from corresponding XML
+
+
+--follow below link to Restrict your API key
+    1. https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+--Authorization failure
+    1. https://bit.ly/2KbcnqD  follow this link

@@ -4,7 +4,9 @@
     <string name="title_infected_locations">Infected Locations</string>
     <string name="title_news">News</string>
 
+    <string name="google_maps_key">AIzaSyBKLNOxj3QeRBkM0vdkqkInLBhg3IW-WZI</string>
     <string name="spinner_name">News</string>
+    <string name="united_nations">United Nation</string>
 
 
     <string-array name="spinner_states">
