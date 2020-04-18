@@ -7,6 +7,6 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 @JsonIgnoreProperties(ignoreUnknown = true)
 
-class essentialsArrayListDTO(
-    @JsonProperty("resources") var resources : ArrayList<essentialsDTO>
+class EssentialsArrayListDTO(
+    @JsonProperty("resources") var resources : ArrayList<EssentialsDTO>
     ) : BaseResponseDTO()

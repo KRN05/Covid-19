@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 @JsonIgnoreProperties(ignoreUnknown = true)
 
-class essentialsDTO(
+class EssentialsDTO(
     @JsonProperty("category") var category : String?=null,
     @JsonProperty("city") var city : String?=null,
     @JsonProperty("contact") var contact : String?=null,

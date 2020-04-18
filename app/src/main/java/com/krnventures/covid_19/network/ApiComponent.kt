@@ -5,6 +5,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
 import java.util.concurrent.TimeUnit
 
 object ApiComponent {
@@ -15,7 +16,7 @@ object ApiComponent {
     //don't declare it as private else you won't be able to use it in other classes
     lateinit var apiServices: ApiServices
     //Base url
-    private const val BASE_URL = "https://api.covid19india.org/"
+    private const val BASE_URL = "https://android-kotlin-fun-mars-server.appspot.com/"
 
     //Configuration constants
     const val REQUEST_READ_TIME_OUT_IN_SECONDS: Long = 30
@@ -52,8 +53,11 @@ object ApiComponent {
              --Retrofit uses the OkHttp library for HTTP requests.
              You should use retrofit over okhttp for its ease, for its features
          */
+        val client = httpClientBuilder.build()
         val retrofit =
             Retrofit.Builder()
+                .client(client)
+                .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(JacksonConverterFactory.create())
                 .baseUrl(BASE_URL)
                 .build()

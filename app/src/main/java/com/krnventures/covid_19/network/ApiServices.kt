@@ -1,6 +1,6 @@
 package com.krnventures.covid_19.network
 
-import com.krnventures.covid_19.dtos.essentialsArrayListDTO
+import com.krnventures.covid_19.dtos.*
 import retrofit2.Call
 import retrofit2.http.GET
 
@@ -16,9 +16,21 @@ interface ApiServices {
         and https://api.covid19india.org/travel_history.json  this.. data format JSON
     */
 
-    @GET("resources/resources")
-    fun getEssentials():
-            Call<essentialsArrayListDTO>
+//    @GET("resources/resources")
+//    fun getEssentials():
+//            Call<EssentialsArrayListDTO>
     //and here inside call you pass the exact same structure of data which is there as JSON
     //you can use a DTO to create such structure.. or ArrayListDTO, depending upon JSON
+
+    @GET("travel_history")
+    fun getTravelHistory():
+            Call<InfectedLocationsArraylistDTO>
+
+    @GET("realestate")
+    fun getEssentials():
+            Call<ArrayList<RealEstateDTO>>
+
+    @GET("realestate")
+    fun getProperties():
+            Call<String>
 }
